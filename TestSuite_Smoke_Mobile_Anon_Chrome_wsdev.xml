@@ -9,7 +9,7 @@
         <listener class-name="listener.TestListener_Mobile_Anon_Smoke_Chrome_wsdev" />
     </listeners>
 
-	<test name="UI test of top, bottom and left-hand navigations">
+	<test name="Test">
 		<packages>
 			<package name="test.Mobile_Anon_UI.Navigations" />
 		</packages>
