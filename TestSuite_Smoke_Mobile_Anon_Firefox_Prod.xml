@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestSuite_Smoke_Mobile_Anon_Chrome_Prod">
+<suite name="TestSuite_Smoke_Mobile_Anon_Firefox_Prod">
 
-  	<parameter name="browserType" value="Chrome" />
+  	<parameter name="browserType" value="Firefox" />
 	<parameter name="testSite" value="https://www.wine-searcher.com?site=mobile" />
 	
 	<listeners>
-        <listener class-name="listener.TestListener_Mobile_Anon_Smoke_Chrome_Prod" />
+        <listener class-name="listener.TestListener_Mobile_Anon_Smoke_Firefox_Prod" />
     </listeners>
-
-	<test name="test">
+	
+	<test name="UI test of top, bottom and left-hand navigations">
 		<packages>
 			<package name="test.Mobile_Anon_UI.Navigations" />
 		</packages>
@@ -97,6 +97,6 @@
 		<packages>
 			<package name="test.Mobile_Anon_Smoke.SiteMap" />
 		</packages>
-	</test>		
-
+	</test>				
+	
 </suite>
